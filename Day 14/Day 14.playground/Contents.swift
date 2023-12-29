@@ -63,3 +63,27 @@ print(author)
 let input = ""
 let numberr = Int(input) ?? 0
 print(numberr)
+
+let names = ["Arya", "Bran", "Robb", "Sansa"]
+
+let chosen = names.randomElement()?.uppercased() ?? "No one"
+print("Next in line: \(chosen)")
+
+var bookk: Book? = nil
+let authorr = bookk?.author?.first?.uppercased() ?? "A"
+print(author)
+
+enum UserError: Error {
+    case badID, networkFailed
+}
+
+func getUser(id: Int) throws -> String {
+    throw UserError.networkFailed
+}
+
+if let user = try? getUser(id: 23) {
+    print("User: \(user)")
+}
+
+let user = (try? getUser(id: 23)) ?? "Anonymous"
+print(user)
