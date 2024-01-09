@@ -19,20 +19,17 @@ struct CapsuleText: View {
     }
 }
 
-struct Title: ViewModifier {
+struct LargeBlueTitle: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.largeTitle)
-            .foregroundStyle(.black)
-            .padding()
-            .background(.white)
-            .clipShape(.rect(cornerRadius: 10))
+            .foregroundStyle(.blue)
     }
 }
 
 extension View {
     func titleStyle() -> some View {
-        modifier(Title())
+        modifier(LargeBlueTitle())
     }
 }
 
