@@ -14,6 +14,7 @@
 		924F72AA2B54219300E05214 /* WordScrambleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F72A92B54219300E05214 /* WordScrambleTests.swift */; };
 		924F72B42B54219300E05214 /* WordScrambleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F72B32B54219300E05214 /* WordScrambleUITests.swift */; };
 		924F72B62B54219300E05214 /* WordScrambleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924F72B52B54219300E05214 /* WordScrambleUITestsLaunchTests.swift */; };
+		9296ED8A2B55546D008B3D4F /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9296ED892B55546D008B3D4F /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		924F72AF2B54219300E05214 /* WordScrambleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordScrambleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		924F72B32B54219300E05214 /* WordScrambleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleUITests.swift; sourceTree = "<group>"; };
 		924F72B52B54219300E05214 /* WordScrambleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScrambleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9296ED892B55546D008B3D4F /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				924F72972B54219200E05214 /* WordScrambleApp.swift */,
 				924F72992B54219200E05214 /* ContentView.swift */,
 				924F729B2B54219300E05214 /* Assets.xcassets */,
+				9296ED892B55546D008B3D4F /* start.txt */,
 				924F729D2B54219300E05214 /* WordScramble.entitlements */,
 				924F729E2B54219300E05214 /* Preview Content */,
 			);
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				924F72A02B54219300E05214 /* Preview Assets.xcassets in Resources */,
+				9296ED8A2B55546D008B3D4F /* start.txt in Resources */,
 				924F729C2B54219300E05214 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
