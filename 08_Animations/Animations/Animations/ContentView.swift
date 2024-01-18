@@ -7,50 +7,51 @@
 
 import SwiftUI
 
+struct CornerRotateModifier: ViewModifier {
+    let amount: Double
+    let anchor: UnitPoint
+
+    func body(content: Content) -> some View {
+        content
+            .rotationEffect(.degrees(amount), anchor: anchor)
+            .clipped()
+    }
+}
+
+extension AnyTransition {
+    static var pivot: AnyTransition {
+        .modifier(
+            active: CornerRotateModifier(amount: -90, anchor: .topLeading),
+            identity: CornerRotateModifier(amount: 0, anchor: .topLeading)
+        )
+    }
+}
+
 struct ContentView: View {
-    
-    @State private var animationAmount = 0.0
+    @State private var enabled = false
+    @State private var dragAmount = CGSize.zero
     
     var body: some View {
         
-        VStack {
+        ZStack {
+            Rectangle()
+                .fill(.blue)
+                .frame(width: 200, height: 100)
+                .clipShape(.rect(cornerRadius: 20))
             
-            Spacer()
-            
-            Button("OK") {
-                animationAmount += 1
+            if enabled {
+                Rectangle()
+                    .fill(.black)
+                    .frame(width: 200, height: 100)
+                    .clipShape(.rect(cornerRadius: 20))
+                    .transition(.pivot)
             }
-            .padding(30)
-            .background(.black)
-            .foregroundStyle(.white)
-            .clipShape(.rect(cornerRadius: 10))
-            .overlay(
-                Circle()
-                    .stroke(.blue)
-                    .scaleEffect(animationAmount)
-                    .opacity(2 - animationAmount)
-                    .animation(.easeInOut(duration: 1).repeatForever(autoreverses : false), value: animationAmount)
-            )
-            .onAppear {
-                animationAmount = 2
-            }
-            
-            Spacer()
-            
-            Button("Tap Me") {
-                withAnimation(.bouncy(duration: 1, extraBounce: 0.4)) {
-                    animationAmount += 360
-                }
-            }
-            .padding(30)
-            .background(.black)
-            .foregroundStyle(.white)
-            .clipShape(.rect(cornerRadius: 10))
-            .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 1, z: 0))
-            
-            Spacer()
         }
-        .padding()
+        .onTapGesture {
+            withAnimation {
+                enabled.toggle()
+            }
+        }
     }
 }
 
