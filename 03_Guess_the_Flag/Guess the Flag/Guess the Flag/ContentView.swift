@@ -17,6 +17,10 @@ struct ContentView: View {
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var score = 0
     @State private var numberOfQuestions = 1
+    @State private var animationAmount = 0.0
+    @State private var opacityAmount = 1.0
+    @State private var selectedFlag : Int?
+    @State private var flagAnimationAmount = 1.0
     
     struct FlagImage: View {
         var flag: String
@@ -57,6 +61,13 @@ struct ContentView: View {
                         } label: {
                             FlagImage(flag: countries[number])
                         }
+                        .rotation3DEffect(
+                            .degrees(selectedFlag == number ? animationAmount : 0),
+                                                  axis: (x: 0.0, y: 1.0, z: 0.0)
+                        )
+                        .opacity(selectedFlag == number ? 1 : opacityAmount)
+                        .scaleEffect(selectedFlag == number ? 1 : flagAnimationAmount)
+                        
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -89,6 +100,9 @@ struct ContentView: View {
     }
     
     func flagTapped(_ number : Int) {
+        
+        selectedFlag = number
+        
         if numberOfQuestions == 8 {
             gameOver = true
         } 
@@ -102,16 +116,31 @@ struct ContentView: View {
             scoreTitle = "Correct!"
             score = score + 1
             scoreMessage = "Your score is \(score)"
+            withAnimation {
+                animationAmount += 360
+                opacityAmount *= 0.25
+                flagAnimationAmount -= 0.25
+            }
         }
         else {
             scoreTitle = "Wrong!"
             scoreMessage = "That's the flag of \(countries[number])!"
+            withAnimation {
+                animationAmount -= 360
+                opacityAmount *= 0.25
+                flagAnimationAmount -= 0.25
+            }
         }
     }
     
     func askQuestions() {
-            countries.shuffle()
-            correctAnswer = Int.random(in: 0...2)
+        countries.shuffle()
+        correctAnswer = Int.random(in: 0...2)
+        withAnimation {
+            animationAmount = 0.0
+            opacityAmount = 1.0
+            flagAnimationAmount = 1.0
+        }
     }
     
     func reset() {
