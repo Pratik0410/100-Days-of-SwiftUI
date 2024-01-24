@@ -14,6 +14,7 @@
 		92B94E712B5D762A0006E037 /* iExpenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B94E702B5D762A0006E037 /* iExpenseTests.swift */; };
 		92B94E7B2B5D762A0006E037 /* iExpenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B94E7A2B5D762A0006E037 /* iExpenseUITests.swift */; };
 		92B94E7D2B5D762A0006E037 /* iExpenseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B94E7C2B5D762A0006E037 /* iExpenseUITestsLaunchTests.swift */; };
+		92CF7E5B2B617AC2003B50F5 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CF7E5A2B617AC2003B50F5 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		92B94E762B5D762A0006E037 /* iExpenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iExpenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B94E7A2B5D762A0006E037 /* iExpenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseUITests.swift; sourceTree = "<group>"; };
 		92B94E7C2B5D762A0006E037 /* iExpenseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpenseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92CF7E5A2B617AC2003B50F5 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		92B94E522B5D76290006E037 = {
 			isa = PBXGroup;
 			children = (
+				92CF7E5A2B617AC2003B50F5 /* AddView.swift */,
 				92B94E5D2B5D76290006E037 /* iExpense */,
 				92B94E6F2B5D762A0006E037 /* iExpenseTests */,
 				92B94E792B5D762A0006E037 /* iExpenseUITests */,
@@ -261,6 +264,7 @@
 			files = (
 				92B94E612B5D76290006E037 /* ContentView.swift in Sources */,
 				92B94E5F2B5D76290006E037 /* iExpenseApp.swift in Sources */,
+				92CF7E5B2B617AC2003B50F5 /* AddView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
