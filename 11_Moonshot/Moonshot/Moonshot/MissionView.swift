@@ -8,6 +8,15 @@
 import Foundation
 import SwiftUI
 
+struct Divider: View {
+    var body: some View {
+        Rectangle()
+            .frame(height: 2)
+            .foregroundStyle(.lightBackground)
+            .padding(.vertical)
+    }
+}
+
 struct MissionView: View {
     
     struct CrewMember {
@@ -40,12 +49,13 @@ struct MissionView: View {
                         width * 0.6
                     }
                     .padding(.top)
+                
+                Text("Launch Date : \(mission.formattedLaunchDate)")
+                    .font(.headline.bold())
+                    .padding()
 
                 VStack(alignment: .leading) {
-                    Rectangle()
-                        .frame(height: 2)
-                        .foregroundStyle(.lightBackground)
-                        .padding(.vertical)
+                    Divider()
 
                     Text("Mission Highlights")
                         .font(.title.bold())
@@ -53,10 +63,7 @@ struct MissionView: View {
 
                     Text(mission.description)
                     
-                    Rectangle()
-                        .frame(height: 2)
-                        .foregroundStyle(.lightBackground)
-                        .padding(.vertical)
+                    Divider()
                     
                     Text("Crew")
                         .font(.title.bold())
