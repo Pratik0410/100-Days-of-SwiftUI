@@ -15,12 +15,21 @@ class Book {
     var genre: String
     var review: String
     var rating: Int
+    var date: Date
 
-    init(title: String, author: String, genre: String, review: String, rating: Int) {
+    init(title: String, author: String, genre: String, review: String, rating: Int, date: Date) {
         self.title = title
         self.author = author
         self.genre = genre
         self.review = review
         self.rating = rating
+        self.date = Date()
+    }
+    
+    func validateBook() -> Bool {
+        if title.isEmpty || title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || author.isEmpty || author.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty  {
+            return false
+        }
+        return true
     }
 }
