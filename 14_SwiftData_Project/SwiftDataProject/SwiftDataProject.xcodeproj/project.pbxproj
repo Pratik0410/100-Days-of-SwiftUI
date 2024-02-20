@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922079352B7F43A700B8C13A /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922079342B7F43A700B8C13A /* UsersView.swift */; };
+		922079372B7FB79B00B8C13A /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922079362B7FB79B00B8C13A /* Job.swift */; };
 		929754DE2B7E755F00B5EBFB /* SwiftDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929754DD2B7E755F00B5EBFB /* SwiftDataProjectApp.swift */; };
 		929754E02B7E755F00B5EBFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929754DF2B7E755F00B5EBFB /* ContentView.swift */; };
 		929754E22B7E756000B5EBFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929754E12B7E756000B5EBFB /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		922079342B7F43A700B8C13A /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		922079362B7FB79B00B8C13A /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		929754DA2B7E755F00B5EBFB /* SwiftDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929754DD2B7E755F00B5EBFB /* SwiftDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataProjectApp.swift; sourceTree = "<group>"; };
 		929754DF2B7E755F00B5EBFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				929754DD2B7E755F00B5EBFB /* SwiftDataProjectApp.swift */,
 				9297550A2B7E781400B5EBFB /* EditUserView.swift */,
 				929754DF2B7E755F00B5EBFB /* ContentView.swift */,
+				922079362B7FB79B00B8C13A /* Job.swift */,
+				922079342B7F43A700B8C13A /* UsersView.swift */,
 				929755082B7E770600B5EBFB /* User.swift */,
 				929754E12B7E756000B5EBFB /* Assets.xcassets */,
 				929754E32B7E756000B5EBFB /* SwiftDataProject.entitlements */,
@@ -265,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922079352B7F43A700B8C13A /* UsersView.swift in Sources */,
+				922079372B7FB79B00B8C13A /* Job.swift in Sources */,
 				929754E02B7E755F00B5EBFB /* ContentView.swift in Sources */,
 				9297550B2B7E781400B5EBFB /* EditUserView.swift in Sources */,
 				929754DE2B7E755F00B5EBFB /* SwiftDataProjectApp.swift in Sources */,
@@ -429,7 +437,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataProject/Preview Content\"";
 				DEVELOPMENT_TEAM = HY3GRU2A96;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -467,7 +475,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataProject/Preview Content\"";
 				DEVELOPMENT_TEAM = HY3GRU2A96;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
