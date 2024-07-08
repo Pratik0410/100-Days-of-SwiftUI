@@ -13,7 +13,6 @@ import MapKit
 extension ContentView {
     @Observable
     class ViewModel {
-        var errorMessage = ""
         private(set) var locations: [Location]
         var isUnlocked = false
         var selectedPlace: Location?
@@ -51,14 +50,10 @@ extension ContentView {
                         self.isUnlocked = true
                     } else {
                         // there was a problem
-                        self.errorMessage = authenticationError?.localizedDescription ?? "Error occurred"
-                        self.showAlert = true
                     }
                 }
             } else {
                 // no biometrics
-                self.errorMessage = "No biometrics authentication available."
-                self.showAlert = true
             }
         }
         

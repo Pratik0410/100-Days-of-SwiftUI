@@ -18,6 +18,7 @@
 		926FE0F42C3697C8003C325C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926FE0F32C3697C8003C325C /* Location.swift */; };
 		926FE0F62C36C3BA003C325C /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926FE0F52C36C3BA003C325C /* EditView.swift */; };
 		92AB86752C37EA4F00D0CB3D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB86742C37EA4F00D0CB3D /* Result.swift */; };
+		92F642E62C3C5B16002ECBC7 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F642E52C3C5B16002ECBC7 /* EditView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		926FE0F32C3697C8003C325C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		926FE0F52C36C3BA003C325C /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		92AB86742C37EA4F00D0CB3D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		92F642E52C3C5B16002ECBC7 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				924618012C33D21100CCD44D /* ContentView.swift */,
 				92536E2C2C3932C600310B55 /* ContentView-ViewModel.swift */,
 				926FE0F52C36C3BA003C325C /* EditView.swift */,
+				92F642E52C3C5B16002ECBC7 /* EditView-ViewModel.swift */,
 				92AB86742C37EA4F00D0CB3D /* Result.swift */,
 				926FE0F32C3697C8003C325C /* Location.swift */,
 				924618032C33D21200CCD44D /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 				924618022C33D21100CCD44D /* ContentView.swift in Sources */,
 				92536E2D2C3932C600310B55 /* ContentView-ViewModel.swift in Sources */,
 				92AB86752C37EA4F00D0CB3D /* Result.swift in Sources */,
+				92F642E62C3C5B16002ECBC7 /* EditView-ViewModel.swift in Sources */,
 				926FE0F42C3697C8003C325C /* Location.swift in Sources */,
 				926FE0F62C36C3BA003C325C /* EditView.swift in Sources */,
 				924618002C33D21100CCD44D /* BucketListApp.swift in Sources */,
