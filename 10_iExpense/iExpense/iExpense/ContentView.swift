@@ -68,6 +68,9 @@ struct ContentView: View {
                                     .foregroundStyle(.red)
                             }
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel(item.name)
+                        .accessibilityHint(item.type)
                     }
                     .onDelete(perform: removeItems)
                 }
@@ -96,6 +99,9 @@ struct ContentView: View {
                                     .foregroundStyle(.red)
                             }
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel(item.name)
+                        .accessibilityHint(item.type)
                     }
                     .onDelete(perform: removeItems)
                 }
