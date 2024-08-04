@@ -11,6 +11,7 @@
 		923567F12C52168E00C0534C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923567F02C52168E00C0534C /* ContentView.swift */; };
 		923567F32C52168F00C0534C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923567F22C52168F00C0534C /* Assets.xcassets */; };
 		923567F62C52168F00C0534C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923567F52C52168F00C0534C /* Preview Assets.xcassets */; };
+		928138D82C5EA38900CE57CD /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928138D72C5EA38900CE57CD /* EditCards.swift */; };
 		929489792C58AC9E00183BF7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929489782C58AC9E00183BF7 /* Card.swift */; };
 		9294897B2C58AEEF00183BF7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294897A2C58AEEF00183BF7 /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -21,6 +22,7 @@
 		923567F02C52168E00C0534C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		923567F22C52168F00C0534C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		923567F52C52168F00C0534C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		928138D72C5EA38900CE57CD /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 		929489782C58AC9E00183BF7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9294897A2C58AEEF00183BF7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +57,7 @@
 		923567ED2C52168E00C0534C /* Flashzilla */ = {
 			isa = PBXGroup;
 			children = (
+				928138D72C5EA38900CE57CD /* EditCards.swift */,
 				923567EE2C52168E00C0534C /* FlashzillaApp.swift */,
 				923567F02C52168E00C0534C /* ContentView.swift */,
 				929489782C58AC9E00183BF7 /* Card.swift */,
@@ -146,6 +149,7 @@
 				923567F12C52168E00C0534C /* ContentView.swift in Sources */,
 				929489792C58AC9E00183BF7 /* Card.swift in Sources */,
 				9294897B2C58AEEF00183BF7 /* CardView.swift in Sources */,
+				928138D82C5EA38900CE57CD /* EditCards.swift in Sources */,
 				923567EF2C52168E00C0534C /* FlashzillaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
